@@ -9,12 +9,16 @@
 * Document the entire pipeline in a structured and reproducible Jupyter notebook.
 
 ## Data Selection
+<img width="1007" height="172" alt="image" src="https://github.com/user-attachments/assets/6740f4e0-8a2b-486b-ac92-6588a9a55c1e" />
 
-* **Source Type:** Sample videos with human or object movement (e.g., sports, surveillance).
-* **Video Duration & Resolution:** Record duration (in seconds or minutes) and resolution (e.g., 1920×1080).
-* **Frame Rate:** Note frames per second (fps) for each video.
-* **Objects & Actions:** Specify the number and type of objects/actions involved.
-* Include at least one video containing multiple moving objects (e.g., cars and people) to evaluate multi-object tracking performance.
+
+We selected three video sequences to cover a variety of tracking scenarios:
+
+| Sequence              | Duration (s) | FPS  | Frames | Resolution  | Classes | Unique IDs |
+|-----------------------|-------------:|-----:|-------:|-------------|---------|-----------:|
+| people-tracking [1]   |         1.37 | 30.0 |     41 | 1280×720    | person  |         45 |
+| MOT17-09-FRCNN  [2]   |        17.50 | 30.0 |    525 | 1920×1080   | person  |         64 |
+| MOT17-13-FRCNN  [3]   |        30.00 | 25.0 |    750 | 1920×1080   | person  |        188 |
 
 ## Data Preprocessing
 
@@ -91,3 +95,9 @@ pip install -r requirements.txt
    ```
 3. Run all cells to execute detection, tracking, and visualization steps.
 4. View annotated videos and figures in the `output/` and `figures/` folders.
+
+
+## References 
+[1]: https://www.kaggle.com/datasets/trainingdatapro/people-tracking
+[2]: https://motchallenge.net/vis/MOT17-09-FRCNN
+[2]: https://motchallenge.net/vis/MOT17-13-FRCNN
