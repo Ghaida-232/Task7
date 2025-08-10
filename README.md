@@ -100,8 +100,6 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 <video controls src="output/samples/mot17-09_demo.mp4" width="720"></video>
 <p><a href="output/samples/mot17-09_demo.mp4">download / watch the tracked video</a></p>
 <br/>
-<video controls src="output/samples/mot17-09_demo.mp4" width="720"></video>
-
 <br/>
 <img width="575" height="297" alt="image" src="https://github.com/user-attachments/assets/347aea64-ac00-4202-9571-e463fa1851ba" />
 <br/>
@@ -112,7 +110,12 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - 0 switches likely because no matches were established.
 - Very high misses → recall failure or eval mismatch.
 <br/>
+<video controls src="output/samples/cars_and_ppl_mot17-13_demo.mp4" width="720"></video>
+<p><a href="output/samplescars_and_ppl_mot17-13_demo.mp4">download / watch the tracked video (car and person)</a></p>
 
+<video controls src="output/samples/mot17-13_demo.mp4" width="720"></video>
+<p><a href="output/samples/mot17-13_demo.mp4">download / watch the tracked video (person only)</a></p>
+<br/>
 <br/>
 <img width="1020" height="288" alt="image" src="https://github.com/user-attachments/assets/73642703-4ac5-44f6-b1ca-3072d002d680" />
 <br/>
@@ -129,20 +132,23 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 ## Project Structure
 
 ```
-project-root/
+Task7/
 ├── data/
-│   └── raw/                        # Raw input videos
+│ └── raw/
+│ ├── MOT17-09-FRCNN/
+│ ├── MOT17-13-FRCNN/
+│ ├── people-tracking/
 ├── notebooks/
-│   └── video_tracking_action.ipynb  # Full pipeline notebook
+│ └── video_tracking_action.ipynb
 ├── output/
-│   ├── tracked_videos/             # Annotated video outputs
-│   └── action_visualizations/      # Visual summaries of actions
-├── figures/
-│   ├── detection_examples.png
-│   ├── tracking_results.png
-│   └── action_summary.png
-├── requirements.txt                # Python dependencies
-└── README.md                       # This file
+│ ├── samples/
+│ │ ├── mot17-09_demo.mp4
+│ │ ├── mot17-13_demo.mp4
+│ │ ├── cars_and_ppl_mot17-13_demo.mp4
+│ │ └── tracked_ppl.mp4
+│ └── output.zip # full outputs (compressed)
+├── .gitattributes # For large files
+└── README.md
 ```
 
 ## Requirements
@@ -171,4 +177,4 @@ project-root/
 ## References 
 [1]: https://www.kaggle.com/datasets/trainingdatapro/people-tracking
 [2]: https://motchallenge.net/vis/MOT17-09-FRCNN
-[2]: https://motchallenge.net/vis/MOT17-13-FRCNN
+[3]: https://motchallenge.net/vis/MOT17-13-FRCNN
