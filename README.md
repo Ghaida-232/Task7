@@ -34,7 +34,7 @@ We selected three video sequences to cover a variety of tracking scenarios:
 
 ## Model Building
 <img width="1942" height="1325" alt="image" src="https://github.com/user-attachments/assets/e546579e-b8a5-42bd-8322-1399271e7cff" />
-
+<br/>
 This run applies a YOLOv8 detector with ByteTrack to the MOT17-09-FRCNN sequence:
 
 - Input: standardized frames from `img1_resized/` to keep resolution consistent across the sequence; tracking restricted to the person class.
@@ -47,9 +47,10 @@ This run applies a YOLOv8 detector with ByteTrack to the MOT17-09-FRCNN sequence
 This configuration prioritizes high recall and ID stability while producing clean, reproducible artifacts for evaluation and reporting.
 
 <br/>
+<br/>
 
 <img width="1932" height="1086" alt="image" src="https://github.com/user-attachments/assets/2248c192-64cc-4cbb-b269-a4c07c39ab96" />
-
+<br/>
 
 This run extends detection and tracking to **two classes** (persons and cars) on the MOT17-13-FRCNN sequence:
 
@@ -69,9 +70,9 @@ This run extends detection and tracking to **two classes** (persons and cars) on
 
 This configuration prioritizes **recall** for mixed pedestrian-vehicle scenes, enabling more complete trajectory coverage before later precision filtering or post-processing.
 <br/>
-
+<br/>
 <img width="1949" height="1034" alt="image" src="https://github.com/user-attachments/assets/8b6df37a-607c-4407-b057-6c7c3f8e1dfe" />
-
+<br/>
 
 This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequence:
 
@@ -95,6 +96,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - 0 switches likely reflects “no matched tracks” rather than stable IDs.
 - Very high misses → recall failure or evaluation mismatch.
 <br/>
+<br/>
 <img width="575" height="297" alt="image" src="https://github.com/user-attachments/assets/347aea64-ac00-4202-9571-e463fa1851ba" />
 <br/>
 **MOT17-13-FRCNN**
@@ -102,6 +104,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - MOTP = NaN → no true positives (precision undefined).
 - 0 switches likely because no matches were established.
 - Very high misses → recall failure or eval mismatch.
+<br/>
 <br/>
 <img width="1020" height="288" alt="image" src="https://github.com/user-attachments/assets/73642703-4ac5-44f6-b1ca-3072d002d680" />
 <br/>
