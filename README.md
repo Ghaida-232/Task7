@@ -122,7 +122,9 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 • MOTA ≈ 0.139 so baseline; idf1 ≈ 0.261 → some id consistency  
 • MOTP = 0.088 so check box scale/units and conversion pipeline  
 • confirm frame indexing (1-based vs 0-based) and person-only filtering  
-
+<br/>
+<video controls src="output/samples/tracked_ppl.mp4" width="720"></video>
+<p><a href="output/samples/tracked_ppl.mp4">download / watch the tracked video</a></p>
 
 ## Project Structure
 
