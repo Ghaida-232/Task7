@@ -90,6 +90,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 ## Evaluation & Visualization
 <img width="715" height="349" alt="image" src="https://github.com/user-attachments/assets/57d27874-149a-48bf-858a-a88bb4e369ec" />
 <br/>
+<br/>
 **MOT17-09-FRCNN**
 - MOTA ≈ 0 (slightly negative) + IDF1 = 0 → no effective matches to ground truth.
 - MOTP = NaN → zero true-positive matches (precision undefined).
@@ -97,9 +98,13 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - Very high misses → recall failure or evaluation mismatch.
 <br/>
 <video controls src="output/samples/mot17-09_demo.mp4" width="720"></video>
+<p><a href="output/samples/mot17-09_demo.mp4">download / watch the tracked video</a></p>
+<br/>
+<video controls src="output/samples/mot17-09_demo.mp4" width="720"></video>
 
 <br/>
 <img width="575" height="297" alt="image" src="https://github.com/user-attachments/assets/347aea64-ac00-4202-9571-e463fa1851ba" />
+<br/>
 <br/>
 **MOT17-13-FRCNN**
 - MOTA ≈ 0 (slightly negative) + IDF1 = 0 → no true matches to GT.
@@ -107,14 +112,15 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - 0 switches likely because no matches were established.
 - Very high misses → recall failure or eval mismatch.
 <br/>
+
 <br/>
 <img width="1020" height="288" alt="image" src="https://github.com/user-attachments/assets/73642703-4ac5-44f6-b1ca-3072d002d680" />
 <br/>
 **people-tracking**
 
 • 41 frames; gt (1785×6), hyp (1585×6) → partial but close  
-• mota ≈ 0.139 so baseline; idf1 ≈ 0.261 → some id consistency  
-• motp = 0.088 so check box scale/units and conversion pipeline  
+• MOTA ≈ 0.139 so baseline; idf1 ≈ 0.261 → some id consistency  
+• MOTP = 0.088 so check box scale/units and conversion pipeline  
 • confirm frame indexing (1-based vs 0-based) and person-only filtering  
 
 
