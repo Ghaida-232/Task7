@@ -92,6 +92,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 <br/>
 <br/>
 **MOT17-09-FRCNN**
+<br/>
 - MOTA ≈ 0 (slightly negative) + IDF1 = 0 → no effective matches to ground truth.
 - MOTP = NaN → zero true-positive matches (precision undefined).
 - 0 switches likely reflects “no matched tracks” rather than stable IDs.
@@ -105,6 +106,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 <br/>
 <br/>
 **MOT17-13-FRCNN**
+<br/>
 - MOTA ≈ 0 (slightly negative) + IDF1 = 0 → no true matches to GT.
 - MOTP = NaN → no true positives (precision undefined).
 - 0 switches likely because no matches were established.
@@ -120,7 +122,7 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 <img width="1020" height="288" alt="image" src="https://github.com/user-attachments/assets/73642703-4ac5-44f6-b1ca-3072d002d680" />
 <br/>
 **people-tracking**
-
+<br/>
 • 41 frames; gt (1785×6), hyp (1585×6) → partial but close  
 • MOTA ≈ 0.139 so baseline; idf1 ≈ 0.261 → some id consistency  
 • MOTP = 0.088 so check box scale/units and conversion pipeline  
