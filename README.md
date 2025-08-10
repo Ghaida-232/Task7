@@ -96,6 +96,8 @@ This run applies a YOLOv8 detector with ByteTrack on the people-tracking sequenc
 - 0 switches likely reflects “no matched tracks” rather than stable IDs.
 - Very high misses → recall failure or evaluation mismatch.
 <br/>
+<video controls src="output/samples/mot17-09_demo.mp4" width="720"></video>
+
 <br/>
 <img width="575" height="297" alt="image" src="https://github.com/user-attachments/assets/347aea64-ac00-4202-9571-e463fa1851ba" />
 <br/>
